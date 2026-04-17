@@ -2,7 +2,8 @@
 
 从 0 手敲复刻 [DeerFlow](https://github.com/bytedance/deer-flow) 架构的学习仓库（与上游实现可略有差异，整体方向一致）。
 
-详细步骤见 **[教程流程](./教程流程/README.md)**。
+- 详细步骤见 **[教程流程](./教程流程/README.md)**。
+- 概念与踩坑整理见 **[学习笔记](./学习笔记/README.md)**（命令、TOML、Lock、Gateway、LangGraph 等）。
 
 ## 环境要求（对齐 DeerFlow 2.0）
 
