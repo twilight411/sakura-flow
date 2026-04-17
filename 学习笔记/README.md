@@ -10,6 +10,7 @@
 | 2 | [02-依赖锁定与项目文件.md](./02-依赖锁定与项目文件.md) | `toml`、`lock`、`sync`、`.venv`、为什么一行命令出一堆文件 |
 | 3 | [03-Gateway与LangGraph概念.md](./03-Gateway与LangGraph概念.md) | 网关、SSE、LangGraph、`workspace`、`checkpoint`、`langgraph.json` |
 | 4 | [04-文件格式与学习边界.md](./04-文件格式与学习边界.md) | 文本与二进制、PDF、和《龙书》等教材的分工 |
+| 5 | [05-根后端与harness-pyproject详解.md](./05-根后端与harness-pyproject详解.md) | 根 `pyproject` vs `packages/harness`、TOML 块、依赖分工表 |
 
 ## 笔记维护约定（轻量）
 
@@ -24,3 +25,4 @@
 - **元数据**：描述项目/包本身的信息（名称、版本），不是业务数据。
 - **sync（uv）**：把虚拟环境与 `pyproject` / `lock` **对齐**，与 TCP 的 SYN 无关。
 - **checkpoint（LangGraph）**：运行时状态的持久化与恢复，不是审批「检查点」。
+- **根后端 / harness**：根 `pyproject` 偏 Gateway 与部署依赖；`packages/harness` 偏 Agent 与 LangGraph 重依赖，见第 5 篇。
